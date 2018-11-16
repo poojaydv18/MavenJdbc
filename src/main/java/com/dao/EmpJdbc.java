@@ -19,7 +19,7 @@ public class EmpJdbc {
 	public Connection myConnection() {
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","Newuser123");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@infva07161:1521:xe","system","Newuser123");
 			System.out.println("Connection to db...");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
